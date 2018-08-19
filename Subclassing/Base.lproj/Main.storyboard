@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Subclassing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="kb3-Vf-068" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="137" y="127" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="71y-Vh-bYy"/>
+                                    <constraint firstAttribute="height" constant="100" id="v1X-4H-V1q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="QYk-mB-Z2O" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="137" y="286" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ERj-Pv-SMe"/>
+                                    <constraint firstAttribute="width" constant="100" id="fKP-MV-Su5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="eVj-RP-8s0" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="137" y="440" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zzc-Bl-8RF"/>
+                                    <constraint firstAttribute="height" constant="100" id="iTT-Mp-Yoe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QYk-mB-Z2O" firstAttribute="top" secondItem="kb3-Vf-068" secondAttribute="bottom" constant="59" id="2af-fH-onR"/>
+                            <constraint firstItem="kb3-Vf-068" firstAttribute="trailing" secondItem="QYk-mB-Z2O" secondAttribute="trailing" id="4y7-Ax-hDR"/>
+                            <constraint firstItem="eVj-RP-8s0" firstAttribute="top" secondItem="QYk-mB-Z2O" secondAttribute="bottom" constant="54" id="DYX-Jm-6Dq"/>
+                            <constraint firstItem="QYk-mB-Z2O" firstAttribute="leading" secondItem="eVj-RP-8s0" secondAttribute="leading" id="Ve0-ck-WUu"/>
+                            <constraint firstItem="kb3-Vf-068" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ksp-QD-wZ0"/>
+                            <constraint firstItem="kb3-Vf-068" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="ky1-ei-On6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eVj-RP-8s0" secondAttribute="bottom" constant="127" id="mkb-EJ-MLX"/>
+                            <constraint firstItem="QYk-mB-Z2O" firstAttribute="trailing" secondItem="eVj-RP-8s0" secondAttribute="trailing" id="olr-Xg-mQV"/>
+                            <constraint firstItem="kb3-Vf-068" firstAttribute="leading" secondItem="QYk-mB-Z2O" secondAttribute="leading" id="q8O-JG-WaN"/>
+                            <constraint firstItem="kb3-Vf-068" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="107" id="qsn-Rk-tKt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="specialImageView1" destination="kb3-Vf-068" id="g0j-Dz-gnx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="400" height="266"/>
+        <image name="2" width="400" height="266"/>
+        <image name="3" width="400" height="266"/>
+    </resources>
+</document>
